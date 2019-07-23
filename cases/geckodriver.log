@@ -1,0 +1,130 @@
+1563887753068	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.4salH2xV8OTT"
+1563887767312	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1563887767313	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1563887779537	Marionette	INFO	Listening on port 50708
+1563887779984	Marionette	WARN	TLS certificate errors will be ignored for this session
+1563887792620	Marionette	INFO	Stopped listening on port 50708
+[Parent 4976, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Parent 4976, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 5356, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 5452, Chrome_ChildThread] WARNING: pipe error: 232: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 493
+[Child 5452, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 5452, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Parent 4976, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 166
+[Parent 4976, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 166
+[Parent 4976, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 3588, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 3588, Chrome_ChildThread] WARNING: pipe error: 10console.error: (new Error("Connection closed before committing the transaction.", "resource://gre/modules/Sqlite.jsm", 632))
+JavaScript error: resource://gre/modules/ExtensionSettingsStore.jsm, line 103: Error: The ExtensionSettingsStore was accessed before the initialize promise resolved.
+1563887952826	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.73qWy5joVvPD"
+1563887953724	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1563887953724	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1563887959897	Marionette	INFO	Listening on port 50770
+1563887959968	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:188:13
+
+1563888019213	Marionette	INFO	Stopped listening on port 50770
+[Parent 1204, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 2060, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 320, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 320, Chrome_ChildThread] WARNING: pipe error: 109[Parent 1204, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 166
+1563888841620	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.2uPITeozQld3"
+1563888842151	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1563888842152	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1563888848542	Marionette	INFO	Listening on port 50853
+1563888848831	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 5308, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 4328, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Child 1812, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 1812, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Parent 5308, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+1563888930793	Marionette	INFO	Stopped listening on port 50853
+1563888959085	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\rust_mozprofile.LINh4T9pUZZn"
+1563888959629	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1563888959629	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1563888965026	Marionette	INFO	Listening on port 50905
+1563888965155	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:188:13
+
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+1563889045389	Marionette	INFO	Stopped listening on port 50905
+[Parent 4504, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 5484, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Parent 4504, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 1140, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Parent 4504, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 4028, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 332
+[Child 4028, Chrome_ChildThread] WARNING: pipe error: 109: f[Parent 4504, Gecko_IOThread] WARNING: file z:/build/build/src/ipc/chromium/src/base/process_util_win.cc, line 166
