@@ -1,0 +1,15 @@
+1563961594507	geckodriver	INFO	geckodriver 0.19.1
+1563961594522	geckodriver	INFO	Listening on 127.0.0.1:62671
+1563961597681	mozrunner::runner	INFO	Running command: "D:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\v-xug\\AppData\\Local\\Temp\\rust_mozprofile.KzhZmzVSAEvV"
+Unable to read VR Path Registry from C:\Users\v-xug\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\v-xug\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\v-xug\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\v-xug\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\v-xug\AppData\Local\openvr\openvrpaths.vrpath
+1563961601575	Marionette	INFO	Listening on port 62680
+1563961601904	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://120.78.128.25:8765/Public/frontend/scripts/app/controllers/index.js, line 1: TypeError: b.offset(...) is undefined
+1563961668657	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+[Child 15240, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15240, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 8784, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346

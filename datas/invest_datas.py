@@ -15,12 +15,10 @@ class InvestData(object):
     """投资功能测试数据"""
 
     # 正确的用户名和密码
-    user_password = [
-        (
-            '18684720553',
-            'python'
-        )
-    ]
+    user_password = {
+            'phone': '18684720553',
+            'pwd': 'python'
+        }
 
     # 测试金额非100倍数
     invest_amount_singular = [
@@ -61,6 +59,6 @@ class InvestData(object):
     invest_success = [
         (
             '100',
-            '投标成功！'
+            '投标成功'
         )
     ]

@@ -13,7 +13,7 @@ from selenium import webdriver
 import pytest
 
 
-@pytest.fixture(scope='module')
+@pytest.fixture(scope='session')
 def driver():
     driver = webdriver.Firefox()
     yield driver
