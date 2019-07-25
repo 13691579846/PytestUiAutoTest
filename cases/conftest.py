@@ -9,12 +9,32 @@
 @GROUP: 878565760
 ------------------------------------
 """
-from selenium import webdriver
 import pytest
 
+from pages.loginPage import LoginPage
+from pages.homePage import HomePage
+from pages.memberPage import MemberPage
+from pages.loanPage import LoanPage
+from datas.invest_datas import InvestData
 
-@pytest.fixture(scope='session')
-def driver():
-    driver = webdriver.Firefox()
-    yield driver
-    driver.quit()
+
+@pytest.fixture(scope='function')
+def login(driver):
+    login_page = LoginPage(driver)
+    login_page.open_url()
+    yield login_page
+    driver.delete_all_cookies()
+
+
+@pytest.fixture(scope='function')
+def invest(driver):
+    login_page = LoginPage(driver)
+    home_page = HomePage(driver)
+    loan_page = LoanPage(driver)
+    member_page = MemberPage(driver)
+    login_page.open_url()
+    login_page.login(InvestData.user_password['phone'],
+                     InvestData.user_password['pwd'])
+    home_page.click_knock_invest_button()
+    yield loan_page, member_page
+    driver.delete_all_cookies()
