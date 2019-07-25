@@ -55,10 +55,12 @@ ui对象库
     可以自定义修改pytest.ini 文件配置，及修改执行测试用例时的命令
 
 测试结果
-    报告展示
+    整体测试报告展示
     ![Image](https://github.com/13691579846/PytestUiAutoTest/blob/master/img/%E6%8A%A5%E5%91%8A%E6%88%AA%E5%9B%BE1.png)
     ![Image](https://github.com/13691579846/PytestUiAutoTest/blob/master/img/%E6%8A%A5%E5%91%8A%E6%88%AA%E5%9B%BE2.png)
+    失败用例截图展示
     ![Image](https://github.com/13691579846/PytestUiAutoTest/blob/master/img/%E9%94%99%E8%AF%AF%E7%94%A8%E4%BE%8B%E6%88%AA%E5%9B%BE.png)
+    
 用例进度
 
     1.登录功能测试用例已经完成
