@@ -16,9 +16,9 @@ from config.config import REPORT_DIR
 
 
 def main():
-    report_dir = CreateDir.create_dir(REPORT_DIR)
-    html_name = report_dir + '/' + CreateDir.generate_filename('html')
-    args = r'pytest --reruns 1 --html=' + html_name + ' ' + '--self-contained-html'
+    CreateDir.create_dir(REPORT_DIR)
+    html_name = CreateDir.generate_filename('html')
+    args = 'pytest --reruns 1 --html=' + './report/' + html_name + ' ' + '--self-contained-html'
     os.system(args)
 
 
