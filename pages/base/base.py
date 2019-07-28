@@ -117,8 +117,8 @@ class Base(object):
             alert = wait.until(ec.alert_is_present())
         except (TimeoutException, NoAlertPresentException):
             self.save_screen_shot("alert")
-            return False
-        return alert
+        else:
+            return alert
 
     def is_clickable(self, by: str, location: str):
         """
@@ -132,8 +132,9 @@ class Base(object):
             wait = WebDriverWait(self.driver, self.timeout)
             element = wait.until(ec.element_to_be_clickable((by, location)))
         except (TimeoutException, NoSuchElementException):
-            return False
-        return element
+            logger.error('元素{}不可点击'.format(location))
+        else:
+            return element
 
     @property
     def get_alert_text(self) -> str:
@@ -200,6 +201,14 @@ class Base(object):
             self.logger.error("输入框:{}, 输入数据{}失败:{}".format(location, value, e))
             self.save_screen_shot("send_keys")
             raise e
+
+    def wait_element_available(self, by: str, location: str):
+        wait = WebDriverWait(self.driver, self.timeout)
+        try:
+            element = wait.until(ec.visibility_of_element_located((by, location)))
+            return element
+        except (TimeoutException, NoSuchElementException):
+            logger.error('未找到元素')
 
     def get_element_text(self, by: str, location: str) -> (str, None):
         """

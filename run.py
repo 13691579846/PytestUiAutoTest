@@ -9,7 +9,7 @@
 @GROUP: 878565760
 ------------------------------------
 """
-import os
+import pytest
 
 from common.create_dirs import CreateDir
 from config.config import REPORT_DIR
@@ -18,8 +18,8 @@ from config.config import REPORT_DIR
 def main():
     CreateDir.create_dir(REPORT_DIR)
     html_name = CreateDir.generate_filename('html')
-    args = 'pytest --reruns 1 --html=' + './report/' + html_name + ' ' + '--self-contained-html'
-    os.system(args)
+    args = ['--reruns', '1', '--html=' + './report/' + html_name]
+    pytest.main(args)
 
 
 if __name__ == '__main__':

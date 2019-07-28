@@ -22,9 +22,9 @@ class TestLogin(object):
 
     @pytest.mark.success
     @pytest.mark.parametrize('user, pwd, expect', t_data.login_success_data)
-    def test_login_success(self, login, user, pwd, expect):
+    def test_login_success(self, open_url, user, pwd, expect):
         """登录:登录成功"""
-        login_page = login
+        login_page = open_url
         login_page.login(user, pwd)
         actual = login_page.get_login_success_info
         try:
@@ -45,9 +45,9 @@ class TestLogin(object):
 
     @pytest.mark.fail
     @pytest.mark.parametrize('user, pwd, expect', t_data.login_format_data)
-    def test_login_format_error(self, login, user, pwd, expect):
+    def test_login_format_error(self, open_url, user, pwd, expect):
         """登录:帐号或密码格式错误"""
-        login_page = login
+        login_page = open_url
         login_page.login(user, pwd)
         actual = login_page.get_phone_pwd_format_info
         try:
@@ -68,9 +68,9 @@ class TestLogin(object):
 
     @pytest.mark.fail
     @pytest.mark.parametrize('user, pwd, expect', t_data.login_account_error_data)
-    def test_login_account_error(self, login, user, pwd, expect):
+    def test_login_account_error(self, open_url, user, pwd, expect):
         """登录:帐号或密码错误"""
-        login_page = login
+        login_page = open_url
         login_page.login(user, pwd)
         actual = login_page.get_phone_pwd_error_info
         try:

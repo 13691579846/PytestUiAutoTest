@@ -22,9 +22,11 @@ class TestInvest(object):
 
     @pytest.mark.fail
     @pytest.mark.parametrize('amount, expect', t_data.invest_amount_singular)
-    def test_amount_singular(self, invest, amount, expect):
+    def test_amount_singular(self, login, amount, expect):
         """投资:投资金额异常"""
-        loan_page = invest[0]
+        home_page = login[1]
+        loan_page = login[2]
+        home_page.click_knock_invest_button()
         loan_page.invest(amount)
         actual = loan_page.get_error_info
         try:
@@ -43,16 +45,18 @@ class TestInvest(object):
 
     @pytest.mark.fail
     @pytest.mark.parametrize('amount, expect', t_data.invest_amount_error)
-    def test_amount_error(self, invest, amount, expect):
+    def test_amount_error(self, login, amount, expect):
         """投资:投资金额异常"""
-        loan_page = invest[0]
+        home_page = login[1]
+        loan_page = login[2]
+        home_page.click_knock_invest_button()
         loan_page.invest(amount)
         actual = loan_page.get_error_alert
         try:
             assert expect == actual, '断言失败'
         except AssertionError as e:
             self.logger.info("测试用例{}-{}测试失败\n{}".format(
-                self.test_amount_singular.__name__,
+                self.test_amount_error.__name__,
                 amount,
                 e))
             loan_page.save_screen_shot('invest_fail')
@@ -64,9 +68,12 @@ class TestInvest(object):
 
     @pytest.mark.success
     @pytest.mark.parametrize('amount, expect', t_data.invest_success)
-    def test_invest_success(self, invest, amount, expect):
+    def test_invest_success(self, login, amount, expect):
+        home_page = login[1]
+        loan_page = login[2]
+        member_page = login[3]
+        home_page.click_knock_invest_button()
         """投资:投资成功"""
-        loan_page, member_page = invest
         account_remain_amount = int(float(loan_page.get_account_remain_amount) * 100)
         loan_page.invest(amount)
         result = loan_page.get_invest_success_info
@@ -78,7 +85,7 @@ class TestInvest(object):
             assert expected == actual, '断言失败'
         except AssertionError as e:
             self.logger.info("测试用例{}-{}测试失败\n{}".format(
-                self.test_amount_singular.__name__,
+                self.test_invest_success.__name__,
                 amount,
                 e))
             loan_page.save_screen_shot('invest_fail')

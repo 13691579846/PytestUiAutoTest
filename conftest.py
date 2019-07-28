@@ -14,10 +14,13 @@ from selenium import webdriver
 from py._xmlgen import html
 
 
+from common.record_log import logger
+
+
 _driver = None
+
+
 # 测试失败时添加截图和测试用例描述(用例的注释信息)
-
-
 @pytest.mark.hookwrapper
 def pytest_runtest_makereport(item):
     """
@@ -63,16 +66,14 @@ def _capture_screenshot():
     :return:
     """
     return _driver.get_screenshot_as_base64()
-# 这里我设置的级别是模块级别，也就是每个测试文件运行一次
-# 可以设置为session，全部用例执行一次，但是针对126邮箱的话
-# 登录次数太多会叫你验证，如果验证就没法执行用例了，我没有对验证处理（处理比较复杂）
 
 
 @pytest.fixture(scope='session')
 def driver():
     global _driver
-    print('------------open browser------------')
+    logger.info('------------open browser------------')
     _driver = webdriver.Firefox()
+    _driver.maximize_window()
     yield _driver
-    print('------------close browser------------')
+    logger.info('------------close browser------------')
     _driver.quit()
