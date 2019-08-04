@@ -68,4 +68,7 @@ ui对象库
 博客地址
 
     https://www.cnblogs.com/linuxchao/
+修改记录
+
+    pip3 install -r requirements.txt
 
