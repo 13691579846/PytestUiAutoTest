@@ -17,7 +17,7 @@ class InvestData(object):
     # 正确的用户名和密码
     user_password = {
             'phone': '18684720553',
-            'pwd': 'python'
+            'pwd': '****'
         }
 
     # 测试金额非100倍数

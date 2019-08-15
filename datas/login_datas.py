@@ -17,8 +17,8 @@ class LoginData(object):
     login_success_data = [
         (
             '18684720553',
-            'python',
-            '我的帐户[python10]'
+            '***',
+            '***'
         )
     ]
 
